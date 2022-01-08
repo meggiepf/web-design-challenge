@@ -1,0 +1,174 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+h1 {
+  background: #008080;
+  padding: 1px;
+  width: 125px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #008080;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/* Add a black background color to the top navigation */
+.navbar {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* link styling for that navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 13px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Highlight current page you are on */
+/*.active {
+  background-color: teal;
+  color: black;
+}
+*/
+/* media query formatting  */
+.navbar .icon {
+  display: none;
+}
+
+/* dropdown button styles */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button style */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: black;
+
+  padding: 14px 16px;
+  background-color: white;
+  font-family: black;
+  margin: 0;
+}
+
+/* hide default dropdowns by default, styling*/
+.dropdown-items {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* link styling in dropdown */
+.dropdown-items a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* white background on top navbar */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* gray background for when hover*/
+.dropdown-items a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* make dropdown show when user hovers */
+.dropdown:hover .dropdown-items {
+  display: block;
+}
+
+/*MEGGIE FIX THESE */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-items {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.column {
+  float: right;
+  width: 40%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+/*.back {
+  height: 500px;
+  padding-top: 20px;
+  background: #cdcdcd;
+}*/
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 60px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+}
+
+/* Giving the .post element margin on 3 sides */
+.post {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.white-box {
+    background-color: white;
+    color: black;
+}

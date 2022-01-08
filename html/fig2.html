@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Design Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- any weird symbols here such as &gt; or &lt; are HTML escape characters. http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php -->
+  <!-- these allow us to do things like write escaped HTML, or HTML that just gets rendered as text in the document -->
+  <h1>City Latitude vs. Humidity</h1>
+  
+
+<div class="navbar" id="myTopnav">
+  <a href="../index.html" class="active">Home</a>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Plots
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-items">
+      <a href="fig1.html">Max Temperature </a>
+      <a href="fig2.html">Humidity </a>
+      <a href="fig3.html">Cloudiness </a>
+      <a href="fig4.html">Wind Speed </a>
+    </div>
+  </div>
+   <a href="comparison.html">Comparison</a>
+  <a href="data.html">Data</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+	
+
+	<!-- <div style="display:inline-block; vertical-align:top;">
+		<img src="Resources/assets/images/Fig1.png" alt="Landing page image" style="width:75%">
+	</div>
+	<div style="display:inline-block;">
+		<p>
+		The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 citites.
+		</p>
+		<p>
+		After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and any visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
+		</p>
+	</div> -->
+
+	<!-- HELP, can;t figure out how to get the text to be inline with the image -->
+	<img style='vertical-align:text-top;' src="../Resources/assets/images/Fig2.png" alt="Figure 2" style="width:50%">
+
+	<div style='vertical-align:text-top; display:inline;'>
+		<p>
+		The purpose of this chart, City Latitiude vs. Humidity was to higlight how the humidity changed as latitidue decreases and increases from the center at 0. This chart does not have a distinct shape, however there are many latitudes that have 100% humidity readings. This indicates that there is not a clear pattern or trend for what latitudes may have high humidity values. On the upper end of the latitude range, there are humidity values that are 0. This indicates a level of dryness and lack of mositure at those values, or they may be erroneous readings. Further evaluation may be required. 
+		</p>
+	</div>
+
+
+	
+
+	
+	<!-- <a href="html/comparison.html">Comparisons</a>
+	<a href="html/data.html">Data</a> -->
+</body>
+
+</html> 
