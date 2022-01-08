@@ -14,7 +14,16 @@ h3 {
   font-size: 30px;
 }
 
+.thead-dark {
+    background-color: teal;
+    color: black;
+}
 
+.table{
+
+  text-align: center;
+
+}
 /* Add a black background color to the top navigation */
 .navbar {
   background-color: white;
@@ -180,3 +189,5 @@ h3 {
     background-color: white;
     color: black;
 }
+
+
